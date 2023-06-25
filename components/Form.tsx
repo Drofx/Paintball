@@ -10,7 +10,9 @@ function Form() {
     };
   
   return (
-    <section className='w-full p-6 items-center'>
+    <section className='w-full gap-6 flex flex-col p-6 '>
+        <h2 className='bold text-2xl '>Agende seu jogo agora </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, blanditiis suscipit numquam quis expedita </p>
         <form className='flex flex-col  gap-6' action="">
         <TextField
             id="outlined-required"
