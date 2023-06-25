@@ -10,13 +10,13 @@ function Form() {
     };
   
   return (
-    <section className='flex flex-col gap-6 w-full p-6 items-center'>
-        <form action="">
+    <section className='w-full p-6 items-center'>
+        <form className='flex flex-col  gap-6' action="">
         <TextField
             id="outlined-required"
             label="Nome completo"
             defaultValue=""
-            className='w-full mb-6'
+            className='w-full '
             InputLabelProps={{
                 shrink: true,
               }}
@@ -25,7 +25,7 @@ function Form() {
             id="outlined-required"
             label="Numero de Telefone"
             defaultValue=""
-            className='w-full mb-6'
+            className='w-full'
             InputLabelProps={{
                 shrink: true,
               }}
@@ -35,12 +35,12 @@ function Form() {
             label="Quantidade de Jogadores"
             type='Number'
             defaultValue=""
-            className='w-full mb-6'
+            className='w-full'
             InputLabelProps={{
                 shrink: true,
               }}
             />
-      <FormControl className='w-full mb-6' sx={{ minWidth: 120 }}>
+      <FormControl className='w-full' sx={{ minWidth: 120 }}>
         <InputLabel shrink={true} id="demo-simple-select-required-label">Tempo de jogo</InputLabel>
         <Select
           labelId="demo-simple-select-required-label"
@@ -58,7 +58,7 @@ function Form() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      <FormControl className='w-full mb-6' sx={{ minWidth: 120 }}>
+      <FormControl className='w-full ' sx={{ minWidth: 120 }}>
         <InputLabel shrink={true} id="demo-simple-select-required-label">Mês</InputLabel>
         <Select
           labelId="demo-simple-select-required-label"
@@ -76,7 +76,7 @@ function Form() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      <FormControl className='w-full mb-6' sx={{ minWidth: 120 }}>
+      <FormControl className='w-full ' sx={{ minWidth: 120 }}>
         <InputLabel shrink={true} id="demo-simple-select-required-label">Dia</InputLabel>
         <Select
           labelId="demo-simple-select-required-label"
@@ -94,7 +94,7 @@ function Form() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      <FormControl className='w-full mb-6' sx={{ minWidth: 120 }}>
+      <FormControl className='w-full ' sx={{ minWidth: 120 }}>
         <InputLabel shrink={true} id="demo-simple-select-required-label">Hora</InputLabel>
         <Select
           labelId="demo-simple-select-required-label"
@@ -112,7 +112,6 @@ function Form() {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      
       <button className='bg-merge  text-white p-2 rounded-sm w-fit shadow-lg font-semibold'>Agendar</button>
         </form>
     </section>  
