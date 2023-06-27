@@ -3,8 +3,6 @@ import React from 'react'
 import test from '@/public/test.jpg'
 import PhotoAlbum, { RenderContainer, RenderPhoto } from 'react-photo-album'
 
-
-
 function Photos() {
 
     const photos:any = [
