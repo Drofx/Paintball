@@ -26,13 +26,10 @@ export default function Home() {
         </button>
       </div>
     </header>
-    <main className="flex flex-col  justify-between text-black  ">
-    <section  className='flex text-white flex-col gap-6 w-full p-6 items-center relative'>
-      <div className="">
+    <section  className='flex text-white flex-col gap-6 w-full p-6 items-center relative bg-url'>
         <h2 className='font-bold w-full sm:max-w-96 text-center text-black-300 text-3xl p-1'>SEJA BEM VINDO</h2>
         <p className='w-full lg:w-96 mt-3 text-center'>Entre no campo de batalha definitivo! Somos o destino para guerreiros implacáveis sedentos por adrenalina. Nossos cenários intensos, equipe altamente treinada e ênfase na estratégia e habilidade garantem confrontos épicos. Prepare-se para uma experiência de paintball de tirar o fôlego, onde apenas os mais destemidos sobrevivem. O desafio está lançado - você está pronto para enfrentá-lo?
         </p>
-      </div>
       <div className="flex w-full justify-center mt-3">
         <Image src={star} className="w-6" alt={"Foto de estrela"} width={24} height={24} />
         <Image src={star} className="w-6" alt={"Foto de estrela"} width={24} height={24} />
@@ -44,7 +41,6 @@ export default function Home() {
         <Image src={militaryTexture} className="w-full h-full object-cover" alt={""}  />
       </div>
     </section>
-    </main>  
     <section className='flex flex-col w-full p-6 items-center bg-zinc-200 '>
       <div className="bg-zinc-100 shadow-2xl flex items-center gap-3 flex-col">
         <div className="p-6 flex flex-col items-center  gap-3">

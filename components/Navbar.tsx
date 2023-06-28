@@ -46,14 +46,12 @@ const Navbar = () => {
         </div>
       </nav>      
       <div onClick={()=>setMobileMenuOpen(false)} className={'fixed w-full flex h-screen left-0 transition-all z-40 '+(mobileMenuOpen?"left-0":"left-full")+(navStyle ? ' pt-16' :' pt-20 ')}>
-
         <div className={'w-full text-white h-min flex-col bg-zinc-900 transition-all flex items-center justify-end'}>
           <Link href="#agendamento" className='border-t border-white w-full text-center py-2'>Agendamento</Link>
           <Link href="#campos" className='border-t border-white w-full text-center py-2'>Campos</Link>
           <Link href="#valores" className='border-t border-white w-full text-center py-2'>Valores</Link>
-          <Link href="#jogo-aberto" className='border-t border-white w-full text-center py-2'>Jogo Aberto/</Link>
+          <Link href="#jogo-aberto" className='border-t border-white w-full text-center py-2'>Jogo Aberto</Link>
         </div>
-
       </div>   
     </>
   )
