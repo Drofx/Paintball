@@ -2,7 +2,7 @@ import star from   "../public/star.svg"
 import Slider from "@/components/Slider"
 import Image from 'next/image'
 import thumb from '../public/thumb.jpg'
-import militaryTexture from '../public/military-texture.jpg'
+import militaryTexture from '../public/military-texture.svg'
 import Photos from "@/components/Photos"
 import Form from "@/components/Form"
 import Navbar from "@/components/Navbar"
@@ -16,8 +16,8 @@ export default function Home() {
   return (
   <>
     <Navbar></Navbar>
-    <header className='w-full h-screen flex flex-col justify-center items-center' >
-      <Image src={thumb} className='absolute w-screen h-screen object-cover -z-50 object-top brightness-75' alt={''}></Image>
+    <header  className='w-full h-screen flex flex-col justify-center items-center' >
+      <Image src={thumb} width={1980} height={1080} className='absolute w-screen h-screen object-cover -z-50 object-top brightness-25' alt={''}></Image>
       <div className=' text-white flex flex-col w-full p-6 ' >
         <h1 className='text-4xl font-semibold'>Procurando um <br /> Campo de Paintball <br /> em para se aventurar?</h1>
         <h2 className='mt-3'>Aqui na Tropa de Choque Paintball Clube, oferecemos todas essas atividades com uma estrutura completa e pensada  para você ter uma experiência inesquecível.</h2>
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
     </header>
     <main className="flex flex-col  justify-between text-black  ">
-    <section className='flex text-white flex-col gap-6 w-full p-6 items-center relative'>
+    <section  className='flex text-white flex-col gap-6 w-full p-6 items-center relative'>
       <div className="">
         <h2 className='font-bold w-full sm:max-w-96 text-center text-black-300 text-3xl p-1'>SEJA BEM VINDO</h2>
         <p className='w-full lg:w-96 mt-3 text-center'>Entre no campo de batalha definitivo! Somos o destino para guerreiros implacáveis sedentos por adrenalina. Nossos cenários intensos, equipe altamente treinada e ênfase na estratégia e habilidade garantem confrontos épicos. Prepare-se para uma experiência de paintball de tirar o fôlego, onde apenas os mais destemidos sobrevivem. O desafio está lançado - você está pronto para enfrentá-lo?
@@ -40,8 +40,8 @@ export default function Home() {
         <Image src={star} className="w-6" alt={"Foto de estrela"} width={24} height={24} />
         <Image src={star} className="w-6" alt={"Foto de estrela"} width={24} height={24} />
       </div>
-      <div className="absolute top-0 left-0 w-full  h-full  -z-50">
-        <Image src={militaryTexture} className="w-screen h-screen object-cover" alt={""}  />
+      <div className="absolute top-0 left-0 w-full h-full -z-50">
+        <Image src={militaryTexture} className="w-full h-full object-cover" alt={""}  />
       </div>
     </section>
     </main>  
@@ -62,27 +62,31 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <section className='flex flex-col w-full p-6 items-center bg-zinc-200 '>
+    <section id="campos" className='flex flex-col w-full p-6 items-center bg-zinc-200 '>
       <div className="bg-zinc-100 shadow-2xl flex items-center gap-3 flex-col">
         <div className="p-6 flex flex-col items-center  gap-3">
           <h2 className='bg-merge font-semibold text-white p-2 rounded-sm w-fit'>Nossos Campos</h2>
           <p className="text-center">Possuimos 4 campos a sua escolha, onde você ira poder destruir seus adversarios.</p>
         </div>
-        <div className="w-full flex items-center flex-col font-bold gap-3">
+        <div className="w-full relative flex items-center flex-col gap-3">
+          <h3 className='bg-zinc-800 w-24 z-10 text-center text-white p-2 rounded-sm absolute top-0 left-0'>Latas </h3>
           <Slider slides={campo1}></Slider>
         </div>
-        <div className="w-full flex items-center flex-col font-bold gap-3">
+        <div className="w-full relative flex items-center flex-col gap-3">
+          <h3 className='bg-zinc-800 w-24 z-10 text-center text-white p-2 rounded-sm absolute top-0 left-0'>Favela</h3>
           <Slider slides={campo2}></Slider>
         </div>
-        <div className="w-full flex items-center flex-col font-bold gap-3">
+        <div className="w-full relative flex items-center flex-col gap-3">
+          <h3 className='bg-zinc-800 w-24 z-10 text-center text-white p-2 rounded-sm absolute top-0 left-0'>Mata</h3>
           <Slider slides={campo3}></Slider>
         </div>
-        <div className="w-full flex items-center flex-col font-bold gap-3">
+        <div className="w-full relative flex items-center flex-col gap-3">
+          <h3 className='bg-zinc-800 w-24 z-10 text-center text-white p-2 rounded-sm absolute top-0 left-0'>Em breve</h3>
           <Slider slides={campo4}></Slider>
         </div>
       </div>
     </section>
-    <section className='flex flex-col gap-6 w-full p-6 items-center'>
+    <section id="jogo-aberto" className='flex flex-col gap-6 w-full p-6 items-center'>
       <div className="bg-zinc-200 shadow-2xl">
         <div className="p-6 flex flex-col items-center  gap-3">
           <h2 className='font-semibold w-full sm:max-w-96 text-center  text-black-300 text-lg p-1 '>Não possui time para jogar? Venha para o jogo aberto!</h2>
@@ -117,7 +121,7 @@ export default function Home() {
             <p>150 Bollinhas</p>
         </div>  
     </section>
-    <section  className='w-full gap-12 flex flex-col p-6'>
+    <section id="agendamento" className='w-full gap-12 flex flex-col p-6'>
         <h2 className='font-bold text-2xl '>Agende seu jogo agora </h2>
         <Form/>
     </section>
