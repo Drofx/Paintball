@@ -19,6 +19,12 @@ module.exports = {
       colors: {
           'merge': '#60332c',
       },
+      width:{
+        '128':'105rem'
+      },
+      maxWidth:{
+        '128':'80rem'
+      },
     },
   },
   plugins: [],

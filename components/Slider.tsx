@@ -12,7 +12,8 @@ function Slider(props:any) {
       <Lightbox
         open={true}
         plugins={[Inline]}
-        inline={{ style: { width: "100%",height:"100%", maxWidth: "900px", aspectRatio: "3 / 2"} }}
+        className='w-full'
+        inline={{ style: { width: "100%",height:"100%", aspectRatio: "3 / 2"} }}
         carousel={{
           padding: 0,
           spacing: 0,
